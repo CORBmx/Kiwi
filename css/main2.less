@@ -1,0 +1,245 @@
+@principal: #011E30;
+@right1: 5px;
+@blanco: #00C6AB; 
+
+body{
+	margin: 0;
+	background-color: 
+}
+}
+#ramos{
+	/*revision*/
+	width: 247px;
+}
+.descripcion{
+	p{
+		color: @blanco;
+		font-weight: bold;
+		font-size: 1.65rem;
+	}
+}
+#titulos{
+	/*revision*/
+	margin-top:90px;
+	text-align: left;
+	h3{
+		display:block; 
+		color:white; 
+		font-size:2em;
+	}
+	span{
+		display:block; 
+		color:@principal; 
+		font-size:1.8em;
+	}
+}
+header{
+	.name-logo{
+		background-color: @principal;
+		color: @blanco;
+		padding: 5px;
+		h1{
+			margin: 0 10px;
+		}
+	}
+	.header-logo{
+		width: 100%;
+		height: 337px;
+		overflow: hidden;
+
+		background: url(../img/fondo.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+
+footer{
+	background-color: @principal;
+	text-align: center;
+	color: @blanco;
+	padding: 13px;
+	margin-top: 20px;
+	.social{
+		font-size: 2.2rem;
+
+		.visit{
+			width: 62px;
+			height: 62px;
+			border: 3px solid @blanco;
+			.circulo;
+			padding-top: 13px;
+			margin: 5px;
+		}
+	}
+}
+
+.caracteristicas{
+	color: @principal;
+	.car-list {
+		margin: 7px auto;
+    	width: 60%;
+    	div{
+		    float:left;
+		    width:100%;
+		    padding-top:50%;
+		    line-height:1em;
+		    margin-top:-0.5em;
+		    text-align:center;
+		    color: @principal;
+		    font-size: 8rem;
+    	}
+	}
+	.car-list:after {
+	    content: "";
+	    display: block;
+	    width: 100%;
+	    height:0;
+	    padding-bottom: 100%;
+	    border: 2px solid  @principal; 
+	    -moz-border-radius: 50%; 
+	    -webkit-border-radius: 50%; 
+	    border-radius: 50%;
+	}
+
+}
+
+.circulo{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+@media only screen and (max-width : 768px){
+	#imagenes{
+		text-align: center;
+	}
+	#ramos{
+		height: auto;
+		width: 173px;
+	}
+	#titulos{
+		margin-top: 0px;
+		text-align: center;
+		h3{
+			font-size: 2.2rem;
+			margin: 9px 0px;
+		}
+		span{
+			font-size: 1.55rem;
+			margin-bottom: 6px;
+
+			
+		}
+	}
+}
+@media only screen and (max-width : 576px){
+	#ramos{
+		height: auto;
+		width: 155px;
+	}
+}
+@media only screen and (max-width : 534px){
+	#ramos{
+		height: auto;
+		width: 160px;
+	}
+	#titulos{
+		h3{
+			font-size: 1.3em;
+		}
+		span{
+			font-size: 1.1em;
+
+			
+		}
+	}
+}
+/*
+.banner {
+	position: relative;
+	overflow: auto;
+	width: 65%;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;	
+	margin: 15px auto;
+	color: rgba(255,255,255,.6);
+	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+	
+	background: @principal;
+	box-shadow: 0 1px 2px rgba(0,0,0,.25);
+
+	ul{
+		list-style: none;
+		width: 300%;
+
+		li{
+			display: block;
+			float: left;
+			width: 38%;
+			padding: 160px 0 110px;
+			min-height: 350px;
+			
+			-webkit-background-size: 100% 100%;
+			-moz-background-size: 100% 100%;
+			-o-background-size: 100% 100%;
+			-ms-background-size: 100% 100%;
+			background-size: 100% 100%;
+			
+			box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+		}
+	}
+
+	h1, h2{
+		font-size: 40px;
+		line-height: 52px;
+		color: @blanco;
+		  }
+
+	.dots{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+
+		li{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 4px;
+			
+			text-indent: -999em;
+			
+			border: 2px solid @blanco;
+			border-radius: 6px;
+			
+			cursor: pointer;
+			opacity: .4;
+			
+			-webkit-transition: background .5s, opacity .5s;
+			-moz-transition: background .5s, opacity .5s;
+			transition: background .5s, opacity .5s;
+		}
+
+		li.active{
+			background: @blanco;
+			opacity: 1;
+		}
+	}
+}
+
+.banner .btn, .banner .dot {
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
+	
+@media only screen and (max-width : 950px){
+	.banner{
+		background-color: red;
+	}
+}*/
